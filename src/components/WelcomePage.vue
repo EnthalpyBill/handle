@@ -31,14 +31,17 @@ const final = computed(() => ({ py: 'uo', zy: 'ㄨㄛ', sp: 'o' }[inputMode.valu
       </button>
     </div>
 
-    <AppName h="2.5rem" />
-    <div mt--1 op50 text-sm>
+    <!-- <AppName h="2.5rem" /> -->
+    <div mt--1 text-4xl>
+      {{ t('name') }}
+    </div>
+    <div mt--1 op50 text-lg>
       {{ t('description') }}
     </div>
 
     <div h-1px w-10 border="b base" m4 />
 
-    <p text-xl font-serif mb4>
+    <p text-xl mb4>
       <b>{{ t('rule') }}</b>
     </p>
 

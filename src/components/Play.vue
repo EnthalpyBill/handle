@@ -149,6 +149,13 @@ watchEffect(() => {
         </div>
       </Transition>
 
+      <div h-200 />
+      <div flex gap2>
+        <button class="btn" @click="reset">
+          重置
+        </button>
+      </div>
+
       <template v-if="isDev">
         <div h-200 />
         <div op50 mb-2>

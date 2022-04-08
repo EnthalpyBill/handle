@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { isDark, showDashboard, showHelp, showSettings, useMask } from '~/state'
 import { gamesCount } from '~/storage'
+import { t } from '~/i18n'
 
 const toggleDark = useToggle(isDark)
 const toggleSettings = useToggle(showSettings)
@@ -14,8 +15,9 @@ function openHelp() {
 
 <template>
   <nav border="b base" relative>
-    <div absolute font-serif text-2xl left-0 right-0 top-0 bottom-0 z--1 tracking-2 flex>
-      <AppName ma />
+    <div absolute text-2xl left-0 right-0 top-0 bottom-0 z--1 tracking-2 flex>
+      <!-- <AppName ma /> -->
+      <div ma>{{ t('name') }}</div>
     </div>
     <div flex items-center justify-between md:max-w-md ma py4 px2>
       <div flex items-center>
