@@ -5,8 +5,8 @@ export function getAnswerOfDay(day: number) {
 
   // const [word = '', hint = ''] = answers[day] || []
 
-  const word = '小猪佩奇'
-  const hint = '猪'
+  const word = '富婆饿饿'
+  const hint = '婆'
   return {
     word,
     hint: hint || getHint(word),
